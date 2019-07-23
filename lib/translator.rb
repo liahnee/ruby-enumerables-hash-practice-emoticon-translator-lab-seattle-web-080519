@@ -10,7 +10,7 @@ emoticon.each do |(meaning, value_array)|
   emoticon_lib[:get_emoticon][value_array[0]] = value_array[1]
   emoticon_lib[:get_meaning][value_array[1]] = meaning
 end
-return emoticon_lib
+return emoticon
 end
 
 def get_japanese_emoticon
