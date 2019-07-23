@@ -1,5 +1,5 @@
 # require modules here
-require 'YAML'
+require 'yaml'
 
 def load_library(address)
   # code goes here
