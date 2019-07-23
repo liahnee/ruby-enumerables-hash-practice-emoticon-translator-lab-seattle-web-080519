@@ -2,9 +2,11 @@
 
 def load_library
   # code goes here
-  emoticon_lib = YAML.load_file('emoticons.yml')
+  emoticon = YAML.load_file('emoticons.yml')
+  emoticon_lib = {}
   
-  return emoticon_lib
+  
+  return 
 end
 
 def get_japanese_emoticon
