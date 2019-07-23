@@ -6,7 +6,11 @@ def load_library
 #  emoticon_lib = {:get_meaning => {japanese emoticon => meaning}, :get_emoticon => {english emoticon => japanese emoticon}}
 # emoticon.yml = {:angel => ["O:)", "☜(⌒▽⌒)☞"   ], :angry => [">:(", "ヽ(ｏ`皿′ｏ)ﾉ"], :bored => []....
 
-return 
+emoticon.each do |(meaning, value_array)|
+  emoticon_lib[:get_emoticon][value_array[0]] = value_array[1]
+  emoticon_lib[:get_meaning][value_array[1]] = meaning
+end
+return emoticon_lib
 end
 
 def get_japanese_emoticon
