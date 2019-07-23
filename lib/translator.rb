@@ -14,12 +14,17 @@ def load_library(address)
   return emoticon_lib
 end
 
-def get_japanese_emoticon(address, emoticon_eng)
+
+def get_japanese_emoticon(address, arg_eng_emo)
   # code goes here
   emo_hash = load_library(address)
-    if 
-  
+  emo_hash[:get_emoticon].each do |(eng_emo, jap_emo)|
+    if eng_emo == arg_eng_emo
+      return jap_emo
+    end
+  end
 end
+
 
 def get_english_meaning
   # code goes here
