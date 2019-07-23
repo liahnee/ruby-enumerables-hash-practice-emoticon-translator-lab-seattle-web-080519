@@ -27,8 +27,14 @@ def get_japanese_emoticon(address, arg_eng_emo)
 end
 
 
-def get_english_meaning
+def get_english_meaning(address, arg_jap_emo)
   # code goes here
-  
+  emo_hash = load_library(address)
+  emo_hash[:get_meaning].each do |(jap_emo, meaning)|
+    if jap_emo == arg_jap_emo
+      return meaning
+    end
+  end
+  return "Sorry, that emoticon was not found"  
   
 end
