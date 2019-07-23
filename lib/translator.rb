@@ -36,5 +36,4 @@ def get_english_meaning(address, arg_jap_emo)
     end
   end
   return "Sorry, that emoticon was not found"  
-  
 end
