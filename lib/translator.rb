@@ -4,9 +4,8 @@ def load_library
   # code goes here
   emoticon = YAML.load_file('emoticons.yml')
 #  emoticon_lib = {:get_meaning => {japanese emoticon => meaning}, :get_emoticon => {english emoticon => japanese emoticon}}
-# emoticon.yml = {:angel => [""  
-  
-  return 
+# emoticon.yml = {:angel => ["O:)", "☜(⌒▽⌒)☞"   ], :angry => [">:(", 
+return 
 end
 
 def get_japanese_emoticon
